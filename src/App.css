@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+.divcolor {
+  color: rgb(158, 128, 223);
+  font-size: 25px;
+  font-weight: bold
+}
+.btn {
+  outline: none;
+  border: none;
+  margin: 0 10px;
+}

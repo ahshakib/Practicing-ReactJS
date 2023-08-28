@@ -9,24 +9,20 @@ function App() {
   const fontsize = {
     "font-size": "25px",
   };
-  const divcolor = {
-    color: "orange",
-    "font-size": "25px",
-    "font-weight": "bold"
-  };
+ 
   return (
     <>
-      <h1 style={styling}>Counter App</h1>
-      <button style={fontsize} onClick={() => setCount(count + 1)}>
+      <h1 style={{color:"ActiveBorder"}}>Counter App</h1>
+      <button style={fontsize} className="btn" onClick={() => setCount(count + 1)}>
         +
       </button>
       <button
-        style={fontsize}
+        style={fontsize} className="btn"
         onClick={() => setCount(count - 1 >= 0 ? count - 1 : 0)}
       >
         -
       </button>
-      <div style={divcolor}>{count}</div>
+      <div className="divcolor">{count}</div>
     </>
   );
 }
