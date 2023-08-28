@@ -31,7 +31,22 @@ function App() {
 }
 
 export function Extra() {
-  return <h6>Powered by Shakib</h6>;
+  const Person = (props) => {
+    return (
+      <>
+        <h4>Name: {props.name}</h4>
+        <h4>Age: {props.age}</h4>
+        <h4>Email: {props.email}</h4>
+      </>
+    );
+  };
+  return (
+    <>
+      <Person name="Shakib" age={23} email="ahshakib75@gmail.com" />
+
+      <h6>Powered by Shakib</h6>
+    </>
+  );
 }
 
 export default App;
