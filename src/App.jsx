@@ -31,6 +31,7 @@ function App() {
 }
 
 export function Extra() {
+  const fruits = ["Apple", "Orange", "Mango", "Banana"];
   const Person = ({ name, age, email }) => {
     return (
       <>
@@ -43,7 +44,11 @@ export function Extra() {
   return (
     <>
       <Person name="Shakib" age="23" email="ahshakib75@gmail.com" />
-
+      <ul>
+        {fruits.map((fruit) => (
+          <li>{fruit}</li>
+        ))}
+      </ul>
       <h6>Powered by Shakib</h6>
     </>
   );
