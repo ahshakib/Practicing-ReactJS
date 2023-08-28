@@ -10,8 +10,15 @@ function App() {
       <button onClick={() => setCount(count + 1)}>+Increment</button>
       <button onClick={() => setCount(count - 1)}>-Decrement</button>
       <div>{count}</div>
+      <Extra/>
     </>
   );
+}
+
+function Extra () {
+  return (
+    <h6>Powered by Shakib</h6>
+  )
 }
 
 export default App;
