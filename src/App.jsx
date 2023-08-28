@@ -31,18 +31,18 @@ function App() {
 }
 
 export function Extra() {
-  const Person = (props) => {
+  const Person = ({ name, age, email }) => {
     return (
       <>
-        <h4>Name: {props.name}</h4>
-        <h4>Age: {props.age}</h4>
-        <h4>Email: {props.email}</h4>
+        <h4>Name: {name}</h4>
+        <h4>Age: {age}</h4>
+        <h4>Email: {email}</h4>
       </>
     );
   };
   return (
     <>
-      <Person name="Shakib" age={23} email="ahshakib75@gmail.com" />
+      <Person name="Shakib" age="23" email="ahshakib75@gmail.com" />
 
       <h6>Powered by Shakib</h6>
     </>
